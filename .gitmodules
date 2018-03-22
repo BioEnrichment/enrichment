@@ -1,0 +1,21 @@
+[submodule "eri-config"]
+	path = eri-config
+	url = git@github.com:BioEnrichment/eri-config.git
+[submodule "eri-xrefdb"]
+	path = eri-xrefdb
+	url = git@github.com:BioEnrichment/eri-xrefdb.git
+[submodule "ldf-facade"]
+	path = ldf-facade
+	url = git@github.com:BioEnrichment/ldf-facade.git
+[submodule "eri-microservice-uniprot"]
+	path = eri-microservice-uniprot
+	url = git@github.com:BioEnrichment/eri-microservice-uniprot.git
+[submodule "eri-microservice-rhea"]
+	path = eri-microservice-rhea
+	url = git@github.com:BioEnrichment/eri-microservice-rhea.git
+[submodule "eri-microservice-chebi"]
+	path = eri-microservice-chebi
+	url = git@github.com:BioEnrichment/eri-microservice-chebi.git
+[submodule "eri-xrefdb-client"]
+	path = eri-xrefdb-client
+	url = git@github.com:BioEnrichment/eri-xrefdb-client.git

@@ -1,0 +1,18 @@
+{
+	"eriPrefix": "http://enrichment.ncl.ac.uk",
+	"xrefdb": "http://localhost:9870",
+	"services": [
+		{
+			"name": "uniprot",
+			"url": "http://localhost:9874"
+		},
+		{
+			"name": "rhea",
+			"url": "http://localhost:9875"
+		},
+		{
+			"name": "chebi",
+			"url": "http://localhost:9876"
+		}
+	]
+}
