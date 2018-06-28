@@ -19,3 +19,6 @@
 [submodule "eri-xrefdb-client"]
 	path = eri-xrefdb-client
 	url = git@github.com:BioEnrichment/eri-xrefdb-client.git
+[submodule "eri-cerebrum"]
+	path = eri-cerebrum
+	url = git@github.com:BioEnrichment/eri-cerebrum.git
