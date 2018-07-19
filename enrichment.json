@@ -14,5 +14,9 @@
 			"name": "chebi",
 			"url": "http://localhost:9876"
 		}
-	]
+	],
+    "cerebrum": {
+        "port": 9000,
+        "pollInterval": 10000
+    }
 }

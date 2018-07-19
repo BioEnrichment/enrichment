@@ -1,24 +1,32 @@
 [submodule "eri-config"]
 	path = eri-config
 	url = git@github.com:BioEnrichment/eri-config.git
+    branch = master
 [submodule "eri-xrefdb"]
 	path = eri-xrefdb
 	url = git@github.com:BioEnrichment/eri-xrefdb.git
+    branch = master
 [submodule "ldf-facade"]
 	path = ldf-facade
 	url = git@github.com:BioEnrichment/ldf-facade.git
+    branch = master
 [submodule "eri-microservice-uniprot"]
 	path = eri-microservice-uniprot
 	url = git@github.com:BioEnrichment/eri-microservice-uniprot.git
+    branch = master
 [submodule "eri-microservice-rhea"]
 	path = eri-microservice-rhea
 	url = git@github.com:BioEnrichment/eri-microservice-rhea.git
+    branch = master
 [submodule "eri-microservice-chebi"]
 	path = eri-microservice-chebi
 	url = git@github.com:BioEnrichment/eri-microservice-chebi.git
+    branch = master
 [submodule "eri-xrefdb-client"]
 	path = eri-xrefdb-client
 	url = git@github.com:BioEnrichment/eri-xrefdb-client.git
+    branch = master
 [submodule "eri-cerebrum"]
 	path = eri-cerebrum
 	url = git@github.com:BioEnrichment/eri-cerebrum.git
+    branch = master

@@ -17,11 +17,11 @@ printf "Linking modules..."
 
 (cd ldf-facade && npm link)
 (cd eri-config && npm link)
-(cd eri-xrefdb && npm link)
 
 (cd eri-microservice-uniprot && npm install --link)
 (cd eri-microservice-rhea && npm install --link)
 (cd eri-microservice-chebi && npm install --link)
+(cd eri-cerebrum && npm install --link)
 
 
 
@@ -32,6 +32,7 @@ fi
 rm -f env.sh
 printf "export %s=%s\n" "PATH" "$PATH" >> env.sh
 printf "export %s=%s\n" "ENRICHMENT_CONFIG" "$ENRICHMENT_CONFIG" >> env.sh
+
 
 
 
