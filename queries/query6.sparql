@@ -1,0 +1,8 @@
+
+SELECT ?participant ?p ?o WHERE {
+	?enzyme <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.uniprot.org/uniprot/Q12068> .
+	?reaction <http://foo/isCatalyzedBy> ?enzyme .
+    ?reaction <http://w3id.org/synbio/ont#hasReactionParticipant> ?participant .
+    ?participant ?p ?o .
+} LIMIT 100
+

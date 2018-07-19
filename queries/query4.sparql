@@ -1,0 +1,6 @@
+
+SELECT ?s ?p ?o WHERE {
+	?s <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.uniprot.org/uniprot/Q12068> .
+    ?s ?p ?o .
+} LIMIT 100
+
