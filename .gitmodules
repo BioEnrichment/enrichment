@@ -30,3 +30,6 @@
 	path = eri-cerebrum
 	url = git@github.com:BioEnrichment/eri-cerebrum.git
     branch = master
+[submodule "ldf-client"]
+	path = ldf-client
+	url = git@github.com:BioEnrichment/ldf-client.git

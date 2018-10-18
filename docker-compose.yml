@@ -1,0 +1,33 @@
+version: '3'
+services:
+    cerebrum:
+        build: eri-cerebrum
+        depends_on:
+            - rhea
+            - chebi
+            - uniprot
+        ports:
+            - "127.0.0.1:9000:9000"
+        volumes:
+            - ${PWD}/opt_enrichment:/opt/enrichment:ro
+        environment:
+            - ENRICHMENT_CONFIG=/opt/enrichment/config.json
+    rhea:
+        build: eri-microservice-rhea
+        volumes:
+            - ${PWD}/opt_enrichment:/opt/enrichment:ro
+        environment:
+            - ENRICHMENT_CONFIG=/opt/enrichment/config.json
+    chebi:
+        build: eri-microservice-chebi
+        volumes:
+            - ${PWD}/opt_enrichment:/opt/enrichment:ro
+        environment:
+            - ENRICHMENT_CONFIG=/opt/enrichment/config.json
+    uniprot:
+        build: eri-microservice-uniprot
+        volumes:
+            - ${PWD}/opt_enrichment:/opt/enrichment:ro
+        environment:
+            - ENRICHMENT_CONFIG=/opt/enrichment/config.json
+
