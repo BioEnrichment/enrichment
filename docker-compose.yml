@@ -1,8 +1,9 @@
 version: '3'
 services:
     cerebrum:
-        build: eri-cerebrum
+        image: enrichment/node_typescript:latest
         depends_on:
+            - postgres
             - rhea
             - chebi
             - uniprot
@@ -10,8 +11,17 @@ services:
             - "127.0.0.1:9000:9000"
         volumes:
             - ${PWD}/opt_enrichment:/opt/enrichment:ro
+            - ${PWD}/eri-cerebrum:/opt/nodeapp
         environment:
             - ENRICHMENT_CONFIG=/opt/enrichment/config.json
+    postgres:
+        image: postgres:11-alpine
+        environment: 
+            - POSTGRES_PASSWORD=postgres
+            - PGDATA=/var/lib/postgresql/data/pgdata
+            - POSTGRES_DB=xrefdb
+        volumes:
+            - ${PWD}/pgdata:/var/lib/postgresql/data/pgdata
     rhea:
         build: eri-microservice-rhea
         volumes:

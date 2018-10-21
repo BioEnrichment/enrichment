@@ -17,6 +17,13 @@
 	],
     "cerebrum": {
         "port": 9000,
-        "pollInterval": 10000
+        "pollInterval": 10000,
+        "db": {
+            "host": "localhost",
+            "port": 5432,
+            "database": "xrefdb",
+            "user": "postgres",
+            "password": "postgres"
+        }
     }
 }
