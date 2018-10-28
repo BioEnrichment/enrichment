@@ -24,6 +24,18 @@
 			"database": "xrefdb",
 			"user": "postgres",
 			"password": "postgres"
+        },
+        "tables": {
+            "DNA": "dna",                                                               
+            "RNA": "rna",                                                               
+            "Protein": "protein",                                                       
+            "SmallMolecule": "small_molecule",                                          
+            "Compound": "compound",                                                     
+            "Reaction": "reaction",                                                     
+            "ReactionParticipant": "reaction_participant",                              
+            "Organism": "organism",                                                     
+            "Evidence": "evidence",                                                     
+            "ProteinProteinInteraction": "protein_protein_interaction"
         }
     }
 }
