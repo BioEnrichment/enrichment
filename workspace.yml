@@ -1,7 +1,0 @@
-- enrichment:
-    layout: tiled
-    panes:
-      - cerebrum: (source env.sh && cd eri-cerebrum && npm start)
-      - uniprot: (source env.sh && cd eri-microservice-uniprot && npm start)
-      - rhea: (source env.sh && cd eri-microservice-rhea && npm start)
-      - chebi: (source env.sh && cd eri-microservice-chebi && npm start)

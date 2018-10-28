@@ -29,9 +29,9 @@ if [ -z "$ENRICHMENT_CONFIG" ]; then
     export ENRICHMENT_CONFIG=$(pwd)/enrichment.json
 fi
 
-rm -f env.sh
-printf "export %s=%s\n" "PATH" "$PATH" >> env.sh
-printf "export %s=%s\n" "ENRICHMENT_CONFIG" "$ENRICHMENT_CONFIG" >> env.sh
+rm -f dev_env.sh
+printf "export %s=%s\n" "PATH" "$PATH" >> dev_env.sh
+printf "export %s=%s\n" "ENRICHMENT_CONFIG" "$ENRICHMENT_CONFIG" >> dev_env.sh
 
 
 

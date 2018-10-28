@@ -11,7 +11,7 @@ services:
             - "127.0.0.1:9000:9000"
         volumes:
             - ${PWD}/opt_enrichment:/opt/enrichment:ro
-            - ${PWD}/eri-cerebrum:/opt/nodeapp
+            - ${PWD}/eri-cerebrum:/opt/nodeapp:rw
         environment:
             - ENRICHMENT_CONFIG=/opt/enrichment/config.json
     postgres:
@@ -23,21 +23,24 @@ services:
         volumes:
             - ${PWD}/pgdata:/var/lib/postgresql/data/pgdata
     rhea:
-        build: eri-microservice-rhea
+        image: enrichment/node:latest
         volumes:
             - ${PWD}/opt_enrichment:/opt/enrichment:ro
+            - ${PWD}/eri-microservice-rhea:/opt/nodeapp:rw
         environment:
             - ENRICHMENT_CONFIG=/opt/enrichment/config.json
     chebi:
-        build: eri-microservice-chebi
+        image: enrichment/node:latest
         volumes:
             - ${PWD}/opt_enrichment:/opt/enrichment:ro
+            - ${PWD}/eri-microservice-chebi:/opt/nodeapp:rw
         environment:
             - ENRICHMENT_CONFIG=/opt/enrichment/config.json
     uniprot:
-        build: eri-microservice-uniprot
+        image: enrichment/node:latest
         volumes:
             - ${PWD}/opt_enrichment:/opt/enrichment:ro
+            - ${PWD}/eri-microservice-uniprot:/opt/nodeapp:rw
         environment:
             - ENRICHMENT_CONFIG=/opt/enrichment/config.json
 
