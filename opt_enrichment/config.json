@@ -1,6 +1,6 @@
 {
 	"eriPrefix": "http://enrichment.ncl.ac.uk",
-	"xrefdb": "http://xrefdb",
+	"xrefdb": "http://cerebrum:9000",
 	"services": [
 		{
 			"name": "uniprot",
