@@ -1,0 +1,32 @@
+{
+  "name": "ensembl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/nodemon/bin/nodemon --require esm server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BioEnrichment/ensembl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BioEnrichment/ensembl/issues"
+  },
+  "homepage": "https://github.com/BioEnrichment/ensembl#readme",
+  "dependencies": {
+    "@bioenrichment/config": "^0.1.0",
+    "@bioenrichment/xrefdb-client": "^0.1.1",
+    "body-parser": "^1.18.3",
+    "esm": "^3.0.84",
+    "ldf-facade": "^0.1.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}

@@ -7,6 +7,10 @@
 			"url": "http://uniprot:9874"
 		},
 		{
+			"name": "ensembl",
+			"url": "http://ensembl:5555"
+		},
+		{
 			"name": "rhea",
 			"url": "http://rhea:9875"
 		},

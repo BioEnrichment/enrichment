@@ -43,4 +43,11 @@ services:
             - ${PWD}/eri-microservice-uniprot:/opt/nodeapp:rw
         environment:
             - ENRICHMENT_CONFIG=/opt/enrichment/config.json
+    ensembl:
+        image: enrichment/node:latest
+        volumes:
+            - ${PWD}/opt_enrichment:/opt/enrichment:ro
+            - ${PWD}/ensembl:/opt/nodeapp:rw
+        environment:
+            - ENRICHMENT_CONFIG=/opt/enrichment/config.json
 
