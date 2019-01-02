@@ -1,6 +1,6 @@
 #!/bin/sh
 
-npm install
-npm run-script tsc
-npm start
+yarn install
+yarn run tsc
+yarn run start
 
